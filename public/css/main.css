@@ -1,0 +1,94 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 500;
+}
+
+/* css untuk halaman error */
+#error-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Agar body memenuhi seluruh tinggi viewport */
+    margin: 0; /* Hapus margin bawaan body */
+}
+
+#error-page h1 {
+    font-weight: 1000;
+    font-size: 7rem;
+    text-align: center; /* Tambahan untuk memastikan teks di tengah */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#error-page .deskripsi{
+    font-size: 2rem;
+    color: rgb(25, 25, 54);
+    transform: translate(-300px, -160px);
+}
+#error-page .link{
+    font-size: 1.5rem;
+    border-radius: 3px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transform: translate(-300px, -160px);
+}
+#error-page a {
+    text-decoration: none;
+}
+
+#error-page .image{
+    width: 20rem;
+    height: auto;
+    transform: translate(300px, 100px);
+}
+#error-page .url{
+    font-size: 1.5rem;
+    transform: translate(-300px, -160px);
+    max-width: 600px;
+    color: red;
+}
+
+
+/* untuk smartphone kecil di bawah 600px */
+@media(max-width : 600px){
+
+#error-page .deskripsi{
+    transform: translate(0px, 0px);
+}
+
+#error-page .link{
+    transform: translate(0px, 0px);
+}
+
+#error-page .url{
+    transform: translate(0px, 0px);
+    color: red;
+}
+
+#error-page .image{
+    transform: translate(1.5rem);
+}
+}
+
+
+/* untuk tablet(601px - 1024px) */
+@media(min-width : 601px) and (max-width: 1024px) {
+#error-page .deskripsi{
+    transform: translate(0px, 0px);
+}
+
+#error-page .link{
+    transform: translate(0px, 0px);
+}
+
+#error-page .url{
+    transform: translate(0px, 0px);
+    color: red;
+}
+
+#error-page .image{
+    transform: translate(6rem);
+}
+}

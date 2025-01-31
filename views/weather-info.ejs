@@ -1,0 +1,25 @@
+<% if (city == undefined) { %>
+    <h1>Search Weather</h1>
+<% } else { %>
+    <h1>Weather in <%= city  %></h1>
+<% } %>
+<form action="/search" method="post">
+    <label for="city">Masukan Nama Kota: </label>
+    <input type="text" name="city" id="city" required>
+    <button type="submit">Cari</button>
+</form>
+
+<% if (city !== undefined) { %>
+    <h3>city name =  <%= weather.name  %></h3>
+    <h3>id = <%= weather.id  %></h3>
+    <h3>country = <%= weather.sys.country  %></h3>
+    <h3>wind = </h3>
+    <ul>
+     <li>speed = <%= weather.wind.speed  %></li>
+     <li>deg = <%= weather.wind.deg  %></li>
+     <li>status = <%= weather.weather[0].main  %></li>
+     <li>tempratur = <%= weather.main.temp  %></li>
+    </ul>
+   <% } %>
+
+<%= a  %>

@@ -1,0 +1,11 @@
+<% if (city == undefined) { %>
+    <h1>Search Weather</h1>
+<% } else { %>
+    <h1>Weather in <%= city  %></h1>
+<% } %>
+<form action="/search" method="post">
+    <label for="city">Masukan Nama Kota: </label>
+    <input type="text" name="city" id="city" required>
+    <button type="submit">Cari</button>
+</form>
+
