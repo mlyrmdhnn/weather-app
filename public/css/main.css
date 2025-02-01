@@ -1,19 +1,34 @@
+/* css untuk main */
 body{
-    display: flex;
-    align-items: center;
     justify-content: center;
+    display: flex;
+    background-color: #9ACBD0;
 }
-h1{
+
+.cuacaaa{
+justify-content: flex-end;
+}
+
+h1{ 
     font-weight: 500;
+    color: white;
+}
+
+h3{
+    color: #2973B2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* css untuk halaman error */
+
+
 #error-page {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh; /* Agar body memenuhi seluruh tinggi viewport */
     margin: 0; /* Hapus margin bawaan body */
+    background-color: white;
 }
 
 #error-page h1 {

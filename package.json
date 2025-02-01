@@ -7,12 +7,22 @@
   },
   "author": "Mulya",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "express-ejs-layouts": "^2.5.1",
     "node-fetch": "^2.7.0",
-    "nodemon": "^3.1.9"
-  }
+    "nodemon": "^3.1.9",
+    "punycode": "^2.3.1",
+    "uninstall": "^0.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlyrmdhnn/weather-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mlyrmdhnn/weather-app/issues"
+  },
+  "homepage": "https://github.com/mlyrmdhnn/weather-app#readme",
+  "description": ""
 }

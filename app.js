@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const fs = require('fs/promises');
 const expressLayout = require('express-ejs-layouts');
-const {weatherRender, tes} = require('../weather/controllers/control');
+const {weatherRender, tes} = require('../weather-app/controllers/control');
 const { title } = require('process');
 
 // gunakan ejs

@@ -1,195 +1,37 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #error-page {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh; /* Agar body memenuhi seluruh tinggi viewport */
-        margin: 0; /* Hapus margin bawaan body */
-}
-
-h1 {
-    font-weight: 1000;
-    font-size: 7rem;
-    text-align: center; /* Tambahan untuk memastikan teks di tengah */
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-#error-page .deskripsi{
-    font-size: 2rem;
-    color: rgb(25, 25, 54);
-    transform: translate(-300px, -160px);
-}
-#error-page .link{
-    font-size: 1.5rem;
-    border-radius: 3px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    transform: translate(-300px, -160px);
-}
-#error-page a {
-    text-decoration: none;
-}
-
-img{
-    width: 20rem;
-    height: auto;
-    transform: translate(300px, 100px);
-}
-.url{
-    font-size: 1.5rem;
-    transform: translate(-300px, -160px);
-}
-
-
-/* untuk smartphone kecil di bawah 600px */
-@media(max-width : 600px){
-
-#error-page .deskripsi{
-    transform: translate(0px, 0px);
-}
-
-#error-page .link{
-    transform: translate(0px, 0px);
-}
-
-.url{
-    transform: translate(0px, 0px);
-}
-
-img{
-    transform: translate(1.5rem);
-}
-}
-
-
-/* untuk tablet(601px - 1024px) */
-@media(min-width : 601px) and (max-width: 1024px) {
-    #error-page .deskripsi{
-    transform: translate(0px, 0px);
-}
-
-#error-page .link{
-    transform: translate(0px, 0px);
-}
-
-.url{
-    transform: translate(0px, 0px);
-}
-
-img{
-    transform: translate(6rem);
-}
-}
-    </style>
-</head>
-<body id="error-page">
-    <div class="container">
-        <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg" alt="">
-        <p class="deskripsi">Halaman Tidak Ditemukan</p>
-        <p class="url">The requested URL urlMsg was not found on this server</p>
-        <p class="link">Silahkan <a href="/">kembali</a> ke halaman awal</p>
-    </div>
-</body>
-</html> -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Not Found</title>
+    <title>Test page</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh; /* Tinggi penuh layar */
-            background-color: white;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            max-width: 600px;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size: 6rem;
-            font-weight: 800;
-            color: #333;
-        }
-
-        .deskripsi {
-            font-size: 1.5rem;
-            color: rgb(25, 25, 54);
-            margin: 10px 0;
-        }
-
-        .url {
-            font-size: 1.2rem;
-            color: red;
-            margin-bottom: 15px;
-        }
-
-        .link {
-            font-size: 1.2rem;
-        }
-
-        .link a {
-            text-decoration: none;
-            color: blue;
-            font-weight: bold;
-        }
-
-        img {
-            max-width: 80%;
-            height: auto;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 4rem;
-            }
-
-            .deskripsi {
-                font-size: 1.2rem;
-            }
-
-            .url {
-                font-size: 1rem;
-            }
-
-            .link {
-                font-size: 1rem;
-            }
-
-            img {
-                max-width: 90%;
-            }
-        }
+        body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 500;
+}
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg" alt="404 Error">
-        
-        <p class="deskripsi">Halaman Tidak Ditemukan</p>
-        <p class="url">The requested URL <%= urlMsg %> was not found on this server.</p>
-        <p class="link">Silakan <a href="/">kembali</a> ke halaman awal</p>
+    <form action="">
+        <label for="">Masukan nama kota</label>
+        <input type="text" name="city" id="city">
+        <button>submit</button>
+    </form>
+    <div class="cuacaaa">
+        <h3>city name = bogor</h3>
+        <h3>Country = ID</h3>
+        <h3>status = Rain</h3>
+        <h3>wind : 
+            <ul>
+                <li>Speed = 1.79</li>
+                <li>Deg = 29=19</li>
+            </ul>
+        </h3>
+        <h3>Temprature = 4.74°C</h3>
     </div>
 </body>
 </html>

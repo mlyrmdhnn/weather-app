@@ -1,11 +1,46 @@
 <% if (city == undefined) { %>
-    <h1>Search Weather</h1>
+    <h1 class="heading">Search Weather</h1>
 <% } else { %>
-    <h1>Weather in <%= city  %></h1>
+    <h1 class="heading">Weather in <%= city  %></h1>
 <% } %>
-<form action="/search" method="post">
-    <label for="city">Masukan Nama Kota: </label>
-    <input type="text" name="city" id="city" required>
-    <button type="submit">Cari</button>
-</form>
+<div class="heading">
+    <form action="/search" method="post">
+        <label for="city">Masukan Nama Kota: </label>
+        <input type="text" name="city" id="city" required>
+        <button type="submit">Cari</button>
+    </form>
+</div>
 
+<% if (city !== undefined) { %>
+    <div class="cuacaaa">
+    <h3>City Name : <%= weather.name  %></h3>
+    <h3>Country   : <%= weather.sys.country  %></h3>
+    <h3>Status    : <%= weather.weather[0].main  %></h3>
+    <h3>wind      : speed <span><%= weather.wind.speed %></span></h3>
+    
+    <!--fungsi untuk mengkonversi kelvin menjadi celcius-->
+    <% 
+        function kelvinToCelcius(kelvin) {
+            return kelvin - 273.15;
+        }
+
+        const kelvin = weather.main.temp;
+        const celcius = kelvinToCelcius(kelvin)
+    %>
+
+    <h3>Temprature : <%= celcius.toFixed(2)  %> °C</h3>
+    </div>
+<% } else{ %>
+    <h1>Mau keluar hari ini? Pastikan cuaca mendukung! Cari tahu cuaca di kotamu sekarang</h1>
+<%} %>
+
+<script src="/script.js"></script>
+<!-- hal-hal yg harus di tampilkan pada apk cuaca -->
+
+<!-- Temperature (°C or °F)
+Weather Condition (Clear, Rainy, Cloudy, Stormy, etc.)
+Humidity (%)
+Wind Speed & Direction
+Air Pressure (hPa or mmHg)
+UV Index (Ultraviolet radiation level)
+Visibility (Distance in km or miles) -->
