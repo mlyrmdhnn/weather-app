@@ -17,7 +17,7 @@ const weatherRender = async (city) => {
     throw error;
   }
 };
- 
+
 const tes = (city) => {
 
   const render = async () => {
@@ -36,11 +36,6 @@ const tes = (city) => {
   }
   }
   
-  // if(city !== undefined) {
-  //   const element = document.querySelector('.suhu');
-  //   element.innerHTML = data.main
-  // }
-
 }
 
 
