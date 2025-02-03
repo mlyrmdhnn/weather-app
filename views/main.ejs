@@ -5,7 +5,7 @@
 <% } %>
 <div class="heading">
     <form action="/search" method="post">
-        <label for="city">Masukan Nama Kota: </label>
+        <label class="text-input" for="city">Masukan Nama Kota: </label>
         <input type="text" name="city" id="city" required>
         <button type="submit">Cari</button>
     </form>
@@ -31,7 +31,7 @@
     <h3>Temprature : <%= celcius.toFixed(2)  %> °C</h3>
     </div>
 <% } else{ %>
-    <h1>Mau keluar hari ini? Pastikan cuaca mendukung! Cari tahu cuaca di kotamu sekarang</h1>
+    <p class="description">Mau keluar hari ini? Pastikan cuaca mendukung! Cari tahu cuaca di kotamu sekarang</p>
 <%} %>
 
 <script src="/script.js"></script>

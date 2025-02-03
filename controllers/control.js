@@ -17,7 +17,7 @@ const weatherRender = async (city) => {
     throw error;
   }
 };
-
+ 
 const tes = (city) => {
 
   const render = async () => {

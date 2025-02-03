@@ -1,5 +1,5 @@
 /* css untuk main */
-body{
+/* body{
     justify-content: center;
     display: flex;
     background-color: #9ACBD0;
@@ -17,8 +17,42 @@ h1{
 h3{
     color: #2973B2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C7285;
 }
 
+.heading {
+    text-align: center;
+}
+
+.description{
+    font-weight: bolder;
+    animation: animasi1 0.5s;
+}
+
+h1{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+.text-input{
+    color: white;
+}
+
+@keyframes animasi1 {
+    0%{
+        transform: scale(0.4)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
 /* css untuk halaman error */
 
 
